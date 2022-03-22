@@ -1,37 +1,50 @@
 .section {
     background-color: gray;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: auto;
-    height: 800px;
-    padding: 0;
-    margin: 0;
+    height: 900px;
+    padding: 50px 0 0 0;
+    gap: 24px;
 }
 
 .container {
     background-color: beige;
     display: flex;
-    width: 576px;
-    height: 576px;
-    border: 2px solid black;
+    width: 624px;
+    height: 624px;
+    border: 2px solid rgb(59, 59, 59); /* grey */
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0;
+    /* padding: 0;
     margin: 0;
-    gap: 0;
+    gap: 0; */
 
 }
 
 .pixel {
-    height: 24px;
-    width: 24px;
     padding: 0;
     margin: 0;
-    gap: 0;
-    background-color: pink;
+    background-color: beige;
 }
 
 .activated {
-    background-color: black;
+    background-color: rgb(40, 80, 0); /* green */
+}
+
+.reset-button {
+    transition-duration: 0.2s;
+    /* text-decoration: none; */
+    padding: 15px 64px;
+    border-radius: 8px;
+    border-width: 2px;
+    background-color: beige;
+    color: rgb(40, 80, 0);
+    font-weight: bold;
+    font-size: large;
+}
+
+.reset-button:hover {
+    background-color: rgb(40, 80, 0);
+    color: beige;
 }
